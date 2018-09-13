@@ -1,4 +1,4 @@
-# CodeOfConduct
+# Code Of Conduct
 A collection of policies and guidelines outline the rules of conduct, procedures, responsibilities and coding standard for each member within the organization.
 
 # Adding a Policy of Guideline
