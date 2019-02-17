@@ -13,9 +13,20 @@ The app's package name (also the project's base package name) MUST apply the com
 
 Application ID is usually kept the same as the app's package name. However, there are times when a project/product has its own or client's domain, the Application ID is then set to this domain but the app's package name should remain the same. In short:
 
-### 2.2 Version Code and Version Name
+### 2.2 Minimum and Target API Level
+minSdkVersion: set to __21__ when starting a new project/module unless otherwise specify in a requirement, as Material Design is introduced in Android 5.0 (API level 21) and some of its features are only available on this API level and above. Also, worth mentioning that in this API level and higher uses ART runtimes which natively supports loading multiple DEX files from APK files, therefore multidex support library is not needed if an app and its libraries references exceed 65,536 methods (64K reference limit).
 
-### 2.3 Dependencies
+May refer to [Android Distribution dashboard](https://developer.android.com/about/dashboards/) for a global statistics about the relative number of devices running a given version of the Android platform on Google Play store.
+
+targetSdkVersion: Starting from August 1, 2018, Google Play store requires new app target at least Android 8.0 (API level 26) and apps that update from November 1, 2018.
+
+Every new Android version introduces changes that bring significant security and performance improvements – and enhance the user experience of Android overall. Some of these changes only apply to apps that explicitly declare support through their targetSdkVersion manifest attribute (also known as the target API level).
+
+Configuring an app to target a recent API level ensures that users can benefit from these improvements and allows it to take advantage of the platform's latest features, while still allowing it to run on older Android versions.
+
+### 2.3 Version Code and Version Name
+
+### 2.4 Dependencies
 
 ## 3 File Naming
 
