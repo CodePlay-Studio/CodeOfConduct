@@ -27,6 +27,7 @@ Configuring an app to target a recent API level ensures that users can benefit f
 ### 2.3 Version Code and Version Name
 
 ### 2.4 Dependencies
+Prefer Maven dependency resolution over importing jar files where possible, and avoid the use of dynamic dependency versions, such as `2.1.+` as this may result in different and unstable builds or subtle, untracked differences in behavior between builds. The use of static versions such as `2.1.1` helps create a more stable, predictable and repeatable development environment.
 
 ## 3 File Naming
 
